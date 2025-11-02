@@ -29,6 +29,10 @@ body {
  .icon {
     padding: 5px;
     background-color: black;
+    grid-area: 1 / 2 / 2 / 3;
+}
+#menu {
+    grid-area: 1 / 3 / 2 / 4;
 }
 #logo {
     color: white;

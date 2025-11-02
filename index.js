@@ -5,6 +5,7 @@ let principal = document.querySelector(".container")
 let final = document.querySelector(".rotape")
 let fechar = document.querySelector(".fechar")
 let categoria = document.querySelector(".menubar")
+let fecha_compra = document.querySelector("#fecharconta")
 
 let close_menu = document.querySelector("#fechar")
 
@@ -20,7 +21,7 @@ function ver() {
     final.style.display="none"
 }
 
-function fecha() {
+function fecharconta() {
     minhaconta.style.display="none"
     principal.style.display=""
     final.style.display=""
