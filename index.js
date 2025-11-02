@@ -8,8 +8,13 @@ let categoria = document.querySelector(".menubar")
 
 let close_menu = document.querySelector("#fechar")
 
+
+//ICON DE COMPRA
 function ver() {
     //alert("funcionando")
+    categoria.style.display="none"
+    close_menu.style.display="none"
+    menu.style.display=""
     minhaconta.style.display="block"
     principal.style.display="none"
     final.style.display="none"
@@ -23,6 +28,7 @@ function fecha() {
 
 function mostre() {
     menu.style.display="none"
+    minhaconta.style.display="none"
     close_menu.style.display="block"
     categoria.style.display="block"
     principal.style.display="none"

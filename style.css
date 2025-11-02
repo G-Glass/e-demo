@@ -22,29 +22,31 @@ body {
     top: 0;
     left: 0;
     background-color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    place-items: center;
+    grid-template: 1fr / repeat(3, 1fr);
 }
-.icon {
+ .icon {
     padding: 5px;
     background-color: black;
 }
 #logo {
     color: white;
 }
-.bar {
+.navbar .bar {
+    grid-area: 1 / 1 / 2 / 2 ;
     background-color: #f5f5f5e5;
-    padding-inline: 5px;
+    
 }
 
 .conta {
     display: none;
     text-align: center;
-    padding: 10% 7px;
     width: 100vw;
+    padding-top: 40px;
     height: 90%;
     grid-area: 2 / 1 / 4 / 3;
+    
 }
 
 .container {
@@ -55,7 +57,7 @@ body {
 /*COR DE TEXTO */
 .bar {
     /* 1. Define o fundo com o gradiente desejado */
-    background: linear-gradient(to right, rgb(20, 2, 2),blue,rgb(243, 8, 243));
+    background: linear-gradient(to right, rgb(128, 14, 14),blue,rgb(243, 8, 243));
     /* 2. Recorta o fundo para que ele apareça apenas nas áreas do texto */
     -webkit-background-clip: text; /* Prefixo para compatibilidade com navegadores */
     background-clip: text;
